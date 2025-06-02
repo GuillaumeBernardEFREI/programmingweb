@@ -1,47 +1,51 @@
-
 <!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
   <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/style-about.css" />
 </head>
 
 
 
 
 <body>
-  
+  <canvas id="leaf-canvas"></canvas>
+  <script src="../scripts/leaves.js">
+  </script>
+
   <header>
     <h1>About Us</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="climate.html">Learn More</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
-  
+
 
 
   <main>
     <section>
-      <h2 id = "about">Team Members</h2>
+      <h2 id="about">Team Members</h2>
       <hr>
-      <a href = https://www.linkedin.com/in/guillaume-bernard-164189292>
-        <img src = "../images/founder_G.webp" id = "teamMember" value ="G">
-      </a>
-      <a href = https://www.linkedin.com/in/vrej-karakozian-19a188292>
-        <img src = "../images/founder_V.webp" id = "teamMember" value="V">
-      </a>
+      <div class="gallery">
+        <div class="image-container">
+          <img src="../images/founder_G.webp" alt="Description">
+          <div class="caption-bar">Guillaume BERNARD</div>
+        </div>
 
-      
-
-      <p><strong>Vrej Karakozian:</strong>Html and CSS</p>
-      <p><strong>Guillaume Bernard:</strong> JavaScript and CSS</p>
+        <div class="image-container">
+          <img src="../images/founder_V.webp" alt="Another Description">
+          <div class="caption-bar">Vrej Karakozian</div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -52,4 +56,5 @@
   </footer>
   <script src="../scripts/script.js"></script>
 </body>
+
 </html>

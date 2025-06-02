@@ -1,7 +1,12 @@
-document.getElementById('climateForm')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const pledge = document.getElementById('pledge').value;
-    alert(`Thank you, ${name}, for your pledge: "${pledge}"!`);
-  });
-  
+function changeHeader(){
+  const path = window.location.pathname;
+  const page = path.split("/").pop().split(".")[0]; // e.g., 'about.html'
+
+  const header = document.getElementsByTagName("header")[0];
+  console.log(page);
+
+  header.style.backgroundImage = `
+  linear-gradient(to left,rgba(0, 12, 10, 0.34),rgba(2, 24, 20, 0.88)),url('../images/${page}.jpg')`;
+    
+
+}
